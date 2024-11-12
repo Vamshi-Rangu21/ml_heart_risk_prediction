@@ -23,7 +23,7 @@ X_scaled = scaler.fit_transform(X)
 
 X_train, X_test, Y_train, Y_test = train_test_split(X_scaled, Y, test_size=0.2, stratify=Y, random_state=2)
 
-model = LogisticRegression(max_iter=1000, solver='saga')  # Increased max_iter and used 'saga' solver
+model = LogisticRegression(max_iter=1000, solver='saga') 
 model.fit(X_train, Y_train)
 
 X_train_prediction = model.predict(X_train)
