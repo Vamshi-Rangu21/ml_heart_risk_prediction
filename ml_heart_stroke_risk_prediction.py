@@ -35,7 +35,7 @@ testing_data_accuracy = accuracy_score(X_test_prediction, Y_test)
 print(f'This is the accuracy score on testing data {testing_data_accuracy}')
 
 
-target = (62, 0, 0, 140, 268, 0, 0, 160, 0, 3.6, 0, 2, 2)
+target = (62, 0, 0, 140, 268, 0, 0, 160, 0, 3.6, 0, 2, 2) #Input
 
 target_df = pd.DataFrame([target], columns=X.columns)
 
